@@ -17,6 +17,8 @@ namespace LinqExercise
             }
         }
         public int YearsOfExperience { get; set; }
+        public string V1 { get; }
+        public string V2 { get; }
 
         public Employee(string firstName, string lastName, int age, int yearsOfExperience)
         {
@@ -29,6 +31,12 @@ namespace LinqExercise
         public Employee()
         {
             
+        }
+
+        public Employee(string v1, string v2)
+        {
+            V1 = v1;
+            V2 = v2;
         }
     }
 }
